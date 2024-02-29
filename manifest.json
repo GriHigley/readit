@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "ReadIt",
+    "description": "Allowing you to freely read the internet with out being asked to subscribe",
+    "version": "1.0",
+    "action": {
+      "default_popup": "readit.html",
+      "default_icon": "readit_logo.png"
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/scraper.js"],
+          "matches": ["https://*.nytimes.com/*"]
+        }
+      ]
+  }
